@@ -4,18 +4,13 @@ Step 1. Make sure you followed the instructions to compile all the packages in t
 
 Step 2. Clone the following in your catkin workspace (check whether it is already installed from main ros repository and pay attention to the forks):
 
-1. https://github.com/ethz-asl/mav_comm.git
-2. https://github.com/aamirahmad/rotors_simulator.git
-3. cd rotors_simulator (check why this is necessary but seems like it is important to clone the next repos inside)
-4. https://github.com/catkin/catkin_simple.git
-5. https://github.com/ethz-asl/yaml_cpp_catkin.git
-Step 3. Make sure you have Gazebo 8 installed. 
+	https://github.com/AIRCAP/rotors_simulator.git
 
-Step 4. export GAZEBO_PLUGIN_PATH=${GAZEBO_PLUGIN_PATH}: <Path to MAVOCAP repository>/Gazebo_Plugins
+Step 4. export GAZEBO_PLUGIN_PATH=${GAZEBO_PLUGIN_PATH}: <Path to rotors_simulator>/Gazebo_Plugins
 
-Step 5. export GAZEBO_MODEL_PATH=${GAZEBO_MODEL_PATH}: <Path to MAVOCAP repository>/Gazebo_Models
+Step 5. export GAZEBO_MODEL_PATH=${GAZEBO_MODEL_PATH}: <Path to rotors_simulator>/Gazebo_Models
 
-Step 6. cd <Path to MAVOCAP repository>/Gazebo_Plugins
+Step 6. cd <Path to rotors_simulator>/Gazebo_Plugins
 	mkdir build
 	cmake ..
 	make
