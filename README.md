@@ -6,20 +6,18 @@ Step 2. Clone the following in your catkin workspace (check whether it is alread
 
 	https://github.com/AIRCAP/rotors_simulator.git
 
-Step 4. export GAZEBO_PLUGIN_PATH=${GAZEBO_PLUGIN_PATH}: <Path to rotors_simulator>/Gazebo_Plugins
+Step 3. export GAZEBO_PLUGIN_PATH=${GAZEBO_PLUGIN_PATH}: <Path to rotors_simulator>/Gazebo_Plugins
 
-Step 5. export GAZEBO_MODEL_PATH=${GAZEBO_MODEL_PATH}: <Path to rotors_simulator>/Gazebo_Models
-
-Step 6. cd <Path to rotors_simulator>/Gazebo_Plugins
+Step 4. cd <Path to rotors_simulator>/Gazebo_Plugins
 	mkdir build
 	cmake ..
 	make
 
-Step 4. Open file <Path to MAVOCAP repository>/Packages/simulation/perception_formation/scripts/experiment_mavocap_gazebo.sh
+Step 5. Open file <Path to AIRCAP repository>/scripts/simulation/setup_mavocap_gazebo.sh or 
 
 sTEP 5. Add desired path for storing the rosbag log files in the line "LOGPATH="
 
-STEP 6. In a terminal :  chmod +x <Path to MAVOCAP repository>/Packages/simulation/perception_formation/scripts/experiment_mavocap_gazebo.sh
+STEP 6. In a terminal :  chmod +x <Path to AIRCAP repository>/scripts/simulation/setup_mavocap_gazebo.sh
 
 Step 7. Open two terminals
 
@@ -27,8 +25,7 @@ Step 8. Run a roscore in one terminal.
 
 Step 9. Execute the following command in the second terminal:
 
-     cd <Path to MAVOCAP repository>/Packages/simulation/perception_formation/scripts
-     ./setup_mavocap_gazebo.sh <number_of_robots> <communication_success_rate_in_%> <experiment_name> 
+     cd <Path to AIRCAP repository>/scripts/simulation/setup_mavocap_gazebo.sh <number_of_robots> <communication_success_rate_in_%> <experiment_name> 
 
 *** In gazebo we observe that the visualization in Gazebo is fast for 1 to 8 robots (<number_of_robots>). Above 8 robots the real time factor is generally near 0.1. The parameter defaults to 2 robots if not provided***
 *** (Optional) <communication_success_rate_in_%> defaults to 100 if not provided***
