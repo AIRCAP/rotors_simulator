@@ -1,0 +1,1190 @@
+Panels:
+  - Class: rviz/Displays
+    Help Height: 78
+    Name: Displays
+    Property Tree Widget:
+      Expanded:
+        - /Global Options1
+        - /Status1
+        - /Grid1
+        - /PoseWithCovariance1/Covariance1
+        - /PoseWithCovariance1/Covariance1/Position1
+        - /Target1/Covariance1/Position1
+        - /Detection1/Covariance1
+        - /Detection1/Covariance1/Position1
+        - /Camera debug1
+        - /PoseWithCovariance2/Covariance1
+        - /PoseWithCovariance2/Covariance1/Position1
+        - /Target2/Covariance1
+        - /Target2/Covariance1/Position1
+        - /Detection2/Covariance1
+        - /Detection2/Covariance1/Position1
+        - /PoseWithCovariance3/Covariance1
+        - /PoseWithCovariance3/Covariance1/Position1
+        - /Detection3/Covariance1
+        - /Detection3/Covariance1/Position1
+        - /Camera debug2
+        - /PoseWithCovariance4/Covariance1
+        - /PoseWithCovariance4/Covariance1/Position1
+        - /Detection4/Covariance1
+        - /Detection4/Covariance1/Position1
+        - /PoseWithCovariance5/Covariance1
+        - /PoseWithCovariance5/Covariance1/Position1
+        - /PoseWithCovariance6/Covariance1
+        - /PoseWithCovariance6/Covariance1/Position1
+        - /Detection6/Covariance1
+        - /Detection6/Covariance1/Position1
+        - /Camera debug3
+        - /PoseWithCovariance7/Covariance1
+        - /PoseWithCovariance7/Covariance1/Position1
+        - /Detection7/Covariance1
+        - /Detection7/Covariance1/Position1
+        - /PoseWithCovariance8/Covariance1
+        - /PoseWithCovariance8/Covariance1/Position1
+        - /Detection8/Covariance1
+        - /Detection8/Covariance1/Position1
+        - /Camera debug4
+        - /Image1
+        - /Camera debug5
+        - /Camera debug6
+        - /Camera debug7
+        - /Camera debug8
+      Splitter Ratio: 0.5
+    Tree Height: 1147
+  - Class: rviz/Selection
+    Name: Selection
+  - Class: rviz/Tool Properties
+    Expanded:
+      - /2D Pose Estimate1
+      - /2D Nav Goal1
+      - /Publish Point1
+    Name: Tool Properties
+    Splitter Ratio: 0.588679016
+  - Class: rviz/Views
+    Expanded:
+      - /Current View1
+    Name: Views
+    Splitter Ratio: 0.5
+  - Class: rviz/Time
+    Experimental: false
+    Name: Time
+    SyncMode: 0
+    SyncSource: Camera debug
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Alpha: 0.5
+      Cell Size: 1
+      Class: rviz/Grid
+      Color: 174; 174; 179
+      Enabled: true
+      Line Style:
+        Line Width: 0.0299999993
+        Value: Billboards
+      Name: Grid
+      Normal Cell Count: 0
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
+      Plane: XY
+      Plane Cell Count: 50
+      Reference Frame: <Fixed Frame>
+      Value: true
+    - Alpha: 1
+      Axes Length: 1
+      Axes Radius: 0.100000001
+      Class: rviz_plugin_covariance/PoseWithCovariance
+      Color: 255; 25; 0
+      Covariance:
+        Orientation:
+          Alpha: 0.5
+          Color: 255; 255; 127
+          Color Style: Unique
+          Frame: Local
+          Offset: 1
+          Scale: 1
+          Value: true
+        Position:
+          Alpha: 1
+          Color: 255; 0; 0
+          Scale: 1
+          Value: true
+        Value: true
+      Enabled: true
+      Head Length: 0.300000012
+      Head Radius: 0.100000001
+      Name: PoseWithCovariance
+      Shaft Length: 1
+      Shaft Radius: 0.0500000007
+      Shape: Axes
+      Topic: /machine_1/object_detections/camera_debug
+      Unreliable: false
+      Value: true
+    - Alpha: 1
+      Axes Length: 0
+      Axes Radius: 0.100000001
+      Class: rviz_plugin_covariance/PoseWithCovariance
+      Color: 255; 25; 0
+      Covariance:
+        Orientation:
+          Alpha: 0.5
+          Color: 255; 255; 127
+          Color Style: Unique
+          Frame: Local
+          Offset: 1
+          Scale: 1
+          Value: false
+        Position:
+          Alpha: 1
+          Color: 255; 255; 255
+          Scale: 1
+          Value: true
+        Value: true
+      Enabled: true
+      Head Length: 0.300000012
+      Head Radius: 0.100000001
+      Name: Target
+      Shaft Length: 1
+      Shaft Radius: 0.0500000007
+      Shape: Axes
+      Topic: /machine_1/target_tracker/pose
+      Unreliable: false
+      Value: true
+    - Alpha: 1
+      Axes Length: 0
+      Axes Radius: 0.100000001
+      Class: rviz_plugin_covariance/PoseWithCovariance
+      Color: 255; 25; 0
+      Covariance:
+        Orientation:
+          Alpha: 0.5
+          Color: 255; 255; 127
+          Color Style: Unique
+          Frame: Local
+          Offset: 1
+          Scale: 1
+          Value: false
+        Position:
+          Alpha: 0.699999988
+          Color: 255; 0; 0
+          Scale: 1
+          Value: true
+        Value: true
+      Enabled: false
+      Head Length: 0.300000012
+      Head Radius: 0.100000001
+      Name: Detection
+      Shaft Length: 1
+      Shaft Radius: 0.0500000007
+      Shape: Axes
+      Topic: /machine_1/object_detections/projected_to_world
+      Unreliable: false
+      Value: false
+    - Class: rviz/Image
+      Enabled: false
+      Image Topic: /machine_1/debug/neural_network/result
+      Max Value: 1
+      Median window: 5
+      Min Value: 0
+      Name: Camera debug
+      Normalize Range: true
+      Queue Size: 2
+      Transport Hint: raw
+      Unreliable: false
+      Value: false
+    - Alpha: 1
+      Axes Length: 1
+      Axes Radius: 0.100000001
+      Class: rviz_plugin_covariance/PoseWithCovariance
+      Color: 255; 25; 0
+      Covariance:
+        Orientation:
+          Alpha: 0.5
+          Color: 255; 255; 127
+          Color Style: Unique
+          Frame: Local
+          Offset: 1
+          Scale: 1
+          Value: true
+        Position:
+          Alpha: 1
+          Color: 255; 255; 0
+          Scale: 1
+          Value: true
+        Value: true
+      Enabled: true
+      Head Length: 0.300000012
+      Head Radius: 0.100000001
+      Name: PoseWithCovariance
+      Shaft Length: 1
+      Shaft Radius: 0.0500000007
+      Shape: Axes
+      Topic: /machine_2/object_detections/camera_debug
+      Unreliable: false
+      Value: true
+    - Alpha: 1
+      Axes Length: 0
+      Axes Radius: 0.100000001
+      Class: rviz_plugin_covariance/PoseWithCovariance
+      Color: 255; 25; 0
+      Covariance:
+        Orientation:
+          Alpha: 0.5
+          Color: 255; 255; 127
+          Color Style: Unique
+          Frame: Local
+          Offset: 1
+          Scale: 1
+          Value: false
+        Position:
+          Alpha: 1
+          Color: 255; 255; 0
+          Scale: 1
+          Value: true
+        Value: true
+      Enabled: false
+      Head Length: 0.300000012
+      Head Radius: 0.100000001
+      Name: Target
+      Shaft Length: 1
+      Shaft Radius: 0.0500000007
+      Shape: Axes
+      Topic: /machine_2/target_tracker/pose
+      Unreliable: false
+      Value: false
+    - Alpha: 1
+      Axes Length: 0
+      Axes Radius: 0.100000001
+      Class: rviz_plugin_covariance/PoseWithCovariance
+      Color: 255; 25; 0
+      Covariance:
+        Orientation:
+          Alpha: 0.5
+          Color: 255; 255; 127
+          Color Style: Unique
+          Frame: Local
+          Offset: 1
+          Scale: 1
+          Value: false
+        Position:
+          Alpha: 0.699999988
+          Color: 255; 255; 0
+          Scale: 1
+          Value: true
+        Value: true
+      Enabled: false
+      Head Length: 0.300000012
+      Head Radius: 0.100000001
+      Name: Detection
+      Shaft Length: 1
+      Shaft Radius: 0.0500000007
+      Shape: Axes
+      Topic: /machine_2/object_detections/projected_to_world_network
+      Unreliable: false
+      Value: false
+    - Alpha: 1
+      Class: rviz/Polygon
+      Color: 0; 0; 0
+      Enabled: true
+      Name: Polygon
+      Topic: /machine_1/command/vis_target
+      Unreliable: false
+      Value: true
+    - Class: rviz/Marker
+      Enabled: false
+      Marker Topic: /machine_1/command/groundtrack
+      Name: Marker
+      Namespaces:
+        {}
+      Queue Size: 100
+      Value: false
+    - Alpha: 1
+      Axes Length: 1
+      Axes Radius: 0.100000001
+      Class: rviz_plugin_covariance/PoseWithCovariance
+      Color: 255; 25; 0
+      Covariance:
+        Orientation:
+          Alpha: 0.5
+          Color: 255; 255; 127
+          Color Style: Unique
+          Frame: Local
+          Offset: 1
+          Scale: 1
+          Value: true
+        Position:
+          Alpha: 1
+          Color: 0; 255; 0
+          Scale: 1
+          Value: true
+        Value: true
+      Enabled: true
+      Head Length: 0.300000012
+      Head Radius: 0.100000001
+      Name: PoseWithCovariance
+      Shaft Length: 1
+      Shaft Radius: 0.0500000007
+      Shape: Axes
+      Topic: /machine_3/object_detections/camera_debug
+      Unreliable: false
+      Value: true
+    - Alpha: 1
+      Axes Length: 0
+      Axes Radius: 0.100000001
+      Class: rviz_plugin_covariance/PoseWithCovariance
+      Color: 255; 25; 0
+      Covariance:
+        Orientation:
+          Alpha: 0.5
+          Color: 255; 255; 127
+          Color Style: Unique
+          Frame: Local
+          Offset: 1
+          Scale: 1
+          Value: false
+        Position:
+          Alpha: 1
+          Color: 255; 255; 0
+          Scale: 1
+          Value: true
+        Value: true
+      Enabled: false
+      Head Length: 0.300000012
+      Head Radius: 0.100000001
+      Name: Target
+      Shaft Length: 1
+      Shaft Radius: 0.0500000007
+      Shape: Axes
+      Topic: /machine_3/target_tracker/pose
+      Unreliable: false
+      Value: false
+    - Alpha: 1
+      Axes Length: 0
+      Axes Radius: 0.100000001
+      Class: rviz_plugin_covariance/PoseWithCovariance
+      Color: 255; 25; 0
+      Covariance:
+        Orientation:
+          Alpha: 0.5
+          Color: 255; 255; 127
+          Color Style: Unique
+          Frame: Local
+          Offset: 1
+          Scale: 1
+          Value: false
+        Position:
+          Alpha: 0.699999988
+          Color: 0; 170; 0
+          Scale: 1
+          Value: true
+        Value: true
+      Enabled: false
+      Head Length: 0.300000012
+      Head Radius: 0.100000001
+      Name: Detection
+      Shaft Length: 1
+      Shaft Radius: 0.0500000007
+      Shape: Axes
+      Topic: /machine_3/object_detections/projected_to_world_network
+      Unreliable: false
+      Value: false
+    - Class: rviz/Image
+      Enabled: false
+      Image Topic: /machine_3/debug/neural_network/result
+      Max Value: 1
+      Median window: 5
+      Min Value: 0
+      Name: Camera debug
+      Normalize Range: true
+      Queue Size: 2
+      Transport Hint: raw
+      Unreliable: false
+      Value: false
+    - Alpha: 1
+      Axes Length: 1
+      Axes Radius: 0.100000001
+      Class: rviz_plugin_covariance/PoseWithCovariance
+      Color: 255; 25; 0
+      Covariance:
+        Orientation:
+          Alpha: 0.5
+          Color: 255; 255; 127
+          Color Style: Unique
+          Frame: Local
+          Offset: 1
+          Scale: 1
+          Value: true
+        Position:
+          Alpha: 1
+          Color: 0; 0; 255
+          Scale: 1
+          Value: true
+        Value: true
+      Enabled: true
+      Head Length: 0.300000012
+      Head Radius: 0.100000001
+      Name: PoseWithCovariance
+      Shaft Length: 1
+      Shaft Radius: 0.0500000007
+      Shape: Axes
+      Topic: /machine_4/object_detections/camera_debug
+      Unreliable: false
+      Value: true
+    - Alpha: 1
+      Axes Length: 0
+      Axes Radius: 0.100000001
+      Class: rviz_plugin_covariance/PoseWithCovariance
+      Color: 255; 25; 0
+      Covariance:
+        Orientation:
+          Alpha: 0.5
+          Color: 255; 255; 127
+          Color Style: Unique
+          Frame: Local
+          Offset: 1
+          Scale: 1
+          Value: false
+        Position:
+          Alpha: 1
+          Color: 255; 255; 0
+          Scale: 1
+          Value: true
+        Value: true
+      Enabled: false
+      Head Length: 0.300000012
+      Head Radius: 0.100000001
+      Name: Target
+      Shaft Length: 1
+      Shaft Radius: 0.0500000007
+      Shape: Axes
+      Topic: /machine_4/target_tracker/pose
+      Unreliable: false
+      Value: false
+    - Alpha: 1
+      Axes Length: 0
+      Axes Radius: 0.100000001
+      Class: rviz_plugin_covariance/PoseWithCovariance
+      Color: 255; 25; 0
+      Covariance:
+        Orientation:
+          Alpha: 0.5
+          Color: 255; 255; 127
+          Color Style: Unique
+          Frame: Local
+          Offset: 1
+          Scale: 1
+          Value: false
+        Position:
+          Alpha: 0.699999988
+          Color: 0; 0; 127
+          Scale: 1
+          Value: true
+        Value: true
+      Enabled: false
+      Head Length: 0.300000012
+      Head Radius: 0.100000001
+      Name: Detection
+      Shaft Length: 1
+      Shaft Radius: 0.0500000007
+      Shape: Axes
+      Topic: /machine_4/object_detections/projected_to_world_network
+      Unreliable: false
+      Value: false
+    - Alpha: 1
+      Arrow Length: 0.0500000007
+      Axes Length: 0.300000012
+      Axes Radius: 0.00999999978
+      Class: rviz/PoseArray
+      Color: 255; 25; 0
+      Enabled: false
+      Head Length: 0.0700000003
+      Head Radius: 0.0299999993
+      Name: PoseArray
+      Shaft Length: 0.230000004
+      Shaft Radius: 0.00999999978
+      Shape: Axes
+      Topic: /NewObstaclePoints_1
+      Unreliable: false
+      Value: false
+    - Alpha: 1
+      Arrow Length: 0.300000012
+      Axes Length: 0.100000001
+      Axes Radius: 0.00999999978
+      Class: rviz/PoseArray
+      Color: 255; 25; 0
+      Enabled: false
+      Head Length: 0.0700000003
+      Head Radius: 0.0299999993
+      Name: PoseArray
+      Shaft Length: 0.230000004
+      Shaft Radius: 0.00999999978
+      Shape: Axes
+      Topic: /NewObstaclePoints_2
+      Unreliable: false
+      Value: false
+    - Alpha: 1
+      Arrow Length: 0.300000012
+      Axes Length: 0.100000001
+      Axes Radius: 0.00999999978
+      Class: rviz/PoseArray
+      Color: 255; 25; 0
+      Enabled: false
+      Head Length: 0.0700000003
+      Head Radius: 0.0299999993
+      Name: PoseArray
+      Shaft Length: 0.230000004
+      Shaft Radius: 0.00999999978
+      Shape: Axes
+      Topic: /NewObstaclePoints_3
+      Unreliable: false
+      Value: false
+    - Alpha: 1
+      Axes Length: 1
+      Axes Radius: 0.100000001
+      Class: rviz/Pose
+      Color: 255; 25; 0
+      Enabled: false
+      Head Length: 0.300000012
+      Head Radius: 0.100000001
+      Name: Pose
+      Shaft Length: 1
+      Shaft Radius: 0.0500000007
+      Shape: Axes
+      Topic: /actorpose
+      Unreliable: false
+      Value: false
+    - Alpha: 1
+      Arrow Length: 0.300000012
+      Axes Length: 0.300000012
+      Axes Radius: 0.00999999978
+      Class: rviz/PoseArray
+      Color: 0; 0; 0
+      Enabled: true
+      Head Length: 0.0700000003
+      Head Radius: 0.0299999993
+      Name: PoseArray
+      Shaft Length: 0.230000004
+      Shaft Radius: 0.00999999978
+      Shape: Arrow (Flat)
+      Topic: /machine_1/mpc_calculated/pose_traj
+      Unreliable: false
+      Value: true
+    - Alpha: 1
+      Arrow Length: 0.300000012
+      Axes Length: 0.300000012
+      Axes Radius: 0.00999999978
+      Class: rviz/PoseArray
+      Color: 0; 0; 0
+      Enabled: true
+      Head Length: 0.0700000003
+      Head Radius: 0.0299999993
+      Name: PoseArray
+      Shaft Length: 0.230000004
+      Shaft Radius: 0.00999999978
+      Shape: Arrow (Flat)
+      Topic: /machine_2/mpc_calculated/pose_traj
+      Unreliable: false
+      Value: true
+    - Alpha: 1
+      Arrow Length: 0.300000012
+      Axes Length: 0.300000012
+      Axes Radius: 0.00999999978
+      Class: rviz/PoseArray
+      Color: 0; 0; 0
+      Enabled: true
+      Head Length: 0.0700000003
+      Head Radius: 0.0299999993
+      Name: PoseArray
+      Shaft Length: 0.230000004
+      Shaft Radius: 0.00999999978
+      Shape: Arrow (Flat)
+      Topic: /machine_3/mpc_calculated/pose_traj
+      Unreliable: false
+      Value: true
+    - Alpha: 1
+      Arrow Length: 0.300000012
+      Axes Length: 0.300000012
+      Axes Radius: 0.00999999978
+      Class: rviz/PoseArray
+      Color: 0; 0; 0
+      Enabled: true
+      Head Length: 0.0700000003
+      Head Radius: 0.0299999993
+      Name: PoseArray
+      Shaft Length: 0.230000004
+      Shaft Radius: 0.00999999978
+      Shape: Arrow (Flat)
+      Topic: /machine_4/mpc_calculated/pose_traj
+      Unreliable: false
+      Value: true
+    - Alpha: 1
+      Axes Length: 1
+      Axes Radius: 0.100000001
+      Class: rviz_plugin_covariance/PoseWithCovariance
+      Color: 255; 25; 0
+      Covariance:
+        Orientation:
+          Alpha: 0.5
+          Color: 255; 255; 127
+          Color Style: Unique
+          Frame: Local
+          Offset: 1
+          Scale: 1
+          Value: true
+        Position:
+          Alpha: 1
+          Color: 255; 85; 255
+          Scale: 1
+          Value: true
+        Value: true
+      Enabled: true
+      Head Length: 0.300000012
+      Head Radius: 0.100000001
+      Name: PoseWithCovariance
+      Shaft Length: 1
+      Shaft Radius: 0.0500000007
+      Shape: Axes
+      Topic: /machine_5/object_detections/camera_debug
+      Unreliable: false
+      Value: true
+    - Alpha: 1
+      Axes Length: 0
+      Axes Radius: 0.100000001
+      Class: rviz_plugin_covariance/PoseWithCovariance
+      Color: 255; 25; 0
+      Covariance:
+        Orientation:
+          Alpha: 0.5
+          Color: 255; 255; 127
+          Color Style: Unique
+          Frame: Local
+          Offset: 1
+          Scale: 1
+          Value: false
+        Position:
+          Alpha: 1
+          Color: 255; 255; 0
+          Scale: 1
+          Value: true
+        Value: true
+      Enabled: false
+      Head Length: 0.300000012
+      Head Radius: 0.100000001
+      Name: Target
+      Shaft Length: 1
+      Shaft Radius: 0.0500000007
+      Shape: Axes
+      Topic: /machine_4/target_tracker/pose
+      Unreliable: false
+      Value: false
+    - Alpha: 1
+      Axes Length: 0
+      Axes Radius: 0.100000001
+      Class: rviz_plugin_covariance/PoseWithCovariance
+      Color: 255; 25; 0
+      Covariance:
+        Orientation:
+          Alpha: 0.5
+          Color: 255; 255; 127
+          Color Style: Unique
+          Frame: Local
+          Offset: 1
+          Scale: 1
+          Value: false
+        Position:
+          Alpha: 0.699999988
+          Color: 255; 85; 255
+          Scale: 1
+          Value: true
+        Value: true
+      Enabled: false
+      Head Length: 0.300000012
+      Head Radius: 0.100000001
+      Name: Detection
+      Shaft Length: 1
+      Shaft Radius: 0.0500000007
+      Shape: Axes
+      Topic: /machine_5/object_detections/projected_to_world_network
+      Unreliable: false
+      Value: false
+    - Alpha: 1
+      Axes Length: 1
+      Axes Radius: 0.100000001
+      Class: rviz_plugin_covariance/PoseWithCovariance
+      Color: 255; 25; 0
+      Covariance:
+        Orientation:
+          Alpha: 0.5
+          Color: 255; 255; 127
+          Color Style: Unique
+          Frame: Local
+          Offset: 1
+          Scale: 1
+          Value: true
+        Position:
+          Alpha: 1
+          Color: 85; 85; 0
+          Scale: 1
+          Value: true
+        Value: true
+      Enabled: true
+      Head Length: 0.300000012
+      Head Radius: 0.100000001
+      Name: PoseWithCovariance
+      Shaft Length: 1
+      Shaft Radius: 0.0500000007
+      Shape: Axes
+      Topic: /machine_6/object_detections/camera_debug
+      Unreliable: false
+      Value: true
+    - Alpha: 1
+      Axes Length: 0
+      Axes Radius: 0.100000001
+      Class: rviz_plugin_covariance/PoseWithCovariance
+      Color: 255; 25; 0
+      Covariance:
+        Orientation:
+          Alpha: 0.5
+          Color: 255; 255; 127
+          Color Style: Unique
+          Frame: Local
+          Offset: 1
+          Scale: 1
+          Value: false
+        Position:
+          Alpha: 1
+          Color: 255; 255; 0
+          Scale: 1
+          Value: true
+        Value: true
+      Enabled: false
+      Head Length: 0.300000012
+      Head Radius: 0.100000001
+      Name: Target
+      Shaft Length: 1
+      Shaft Radius: 0.0500000007
+      Shape: Axes
+      Topic: /machine_4/target_tracker/pose
+      Unreliable: false
+      Value: false
+    - Alpha: 1
+      Axes Length: 0
+      Axes Radius: 0.100000001
+      Class: rviz_plugin_covariance/PoseWithCovariance
+      Color: 255; 25; 0
+      Covariance:
+        Orientation:
+          Alpha: 0.5
+          Color: 255; 255; 127
+          Color Style: Unique
+          Frame: Local
+          Offset: 1
+          Scale: 1
+          Value: false
+        Position:
+          Alpha: 0.699999988
+          Color: 85; 85; 0
+          Scale: 1
+          Value: true
+        Value: true
+      Enabled: false
+      Head Length: 0.300000012
+      Head Radius: 0.100000001
+      Name: Detection
+      Shaft Length: 1
+      Shaft Radius: 0.0500000007
+      Shape: Axes
+      Topic: /machine_6/object_detections/projected_to_world_network
+      Unreliable: false
+      Value: false
+    - Class: rviz/Image
+      Enabled: false
+      Image Topic: /machine_6/debug/neural_network/result
+      Max Value: 1
+      Median window: 5
+      Min Value: 0
+      Name: Camera debug
+      Normalize Range: true
+      Queue Size: 2
+      Transport Hint: raw
+      Unreliable: false
+      Value: false
+    - Alpha: 1
+      Axes Length: 1
+      Axes Radius: 0.100000001
+      Class: rviz_plugin_covariance/PoseWithCovariance
+      Color: 255; 25; 0
+      Covariance:
+        Orientation:
+          Alpha: 0.5
+          Color: 255; 255; 127
+          Color Style: Unique
+          Frame: Local
+          Offset: 1
+          Scale: 1
+          Value: true
+        Position:
+          Alpha: 1
+          Color: 85; 170; 255
+          Scale: 1
+          Value: true
+        Value: true
+      Enabled: true
+      Head Length: 0.300000012
+      Head Radius: 0.100000001
+      Name: PoseWithCovariance
+      Shaft Length: 1
+      Shaft Radius: 0.0500000007
+      Shape: Axes
+      Topic: /machine_7/object_detections/camera_debug
+      Unreliable: false
+      Value: true
+    - Alpha: 1
+      Axes Length: 0
+      Axes Radius: 0.100000001
+      Class: rviz_plugin_covariance/PoseWithCovariance
+      Color: 255; 25; 0
+      Covariance:
+        Orientation:
+          Alpha: 0.5
+          Color: 255; 255; 127
+          Color Style: Unique
+          Frame: Local
+          Offset: 1
+          Scale: 1
+          Value: false
+        Position:
+          Alpha: 1
+          Color: 255; 255; 0
+          Scale: 1
+          Value: true
+        Value: true
+      Enabled: false
+      Head Length: 0.300000012
+      Head Radius: 0.100000001
+      Name: Target
+      Shaft Length: 1
+      Shaft Radius: 0.0500000007
+      Shape: Axes
+      Topic: /machine_4/target_tracker/pose
+      Unreliable: false
+      Value: false
+    - Alpha: 1
+      Axes Length: 0
+      Axes Radius: 0.100000001
+      Class: rviz_plugin_covariance/PoseWithCovariance
+      Color: 255; 25; 0
+      Covariance:
+        Orientation:
+          Alpha: 0.5
+          Color: 255; 255; 127
+          Color Style: Unique
+          Frame: Local
+          Offset: 1
+          Scale: 1
+          Value: false
+        Position:
+          Alpha: 0.699999988
+          Color: 0; 0; 127
+          Scale: 1
+          Value: true
+        Value: true
+      Enabled: false
+      Head Length: 0.300000012
+      Head Radius: 0.100000001
+      Name: Detection
+      Shaft Length: 1
+      Shaft Radius: 0.0500000007
+      Shape: Axes
+      Topic: /machine_7/object_detections/projected_to_world_network
+      Unreliable: false
+      Value: false
+    - Alpha: 1
+      Axes Length: 1
+      Axes Radius: 0.100000001
+      Class: rviz_plugin_covariance/PoseWithCovariance
+      Color: 255; 25; 0
+      Covariance:
+        Orientation:
+          Alpha: 0.5
+          Color: 255; 255; 127
+          Color Style: Unique
+          Frame: Local
+          Offset: 1
+          Scale: 1
+          Value: true
+        Position:
+          Alpha: 1
+          Color: 0; 0; 0
+          Scale: 1
+          Value: true
+        Value: true
+      Enabled: true
+      Head Length: 0.300000012
+      Head Radius: 0.100000001
+      Name: PoseWithCovariance
+      Shaft Length: 1
+      Shaft Radius: 0.0500000007
+      Shape: Axes
+      Topic: /machine_8/object_detections/camera_debug
+      Unreliable: false
+      Value: true
+    - Alpha: 1
+      Axes Length: 0
+      Axes Radius: 0.100000001
+      Class: rviz_plugin_covariance/PoseWithCovariance
+      Color: 255; 25; 0
+      Covariance:
+        Orientation:
+          Alpha: 0.5
+          Color: 255; 255; 127
+          Color Style: Unique
+          Frame: Local
+          Offset: 1
+          Scale: 1
+          Value: false
+        Position:
+          Alpha: 1
+          Color: 255; 255; 0
+          Scale: 1
+          Value: true
+        Value: true
+      Enabled: false
+      Head Length: 0.300000012
+      Head Radius: 0.100000001
+      Name: Target
+      Shaft Length: 1
+      Shaft Radius: 0.0500000007
+      Shape: Axes
+      Topic: /machine_4/target_tracker/pose
+      Unreliable: false
+      Value: false
+    - Alpha: 1
+      Axes Length: 0
+      Axes Radius: 0.100000001
+      Class: rviz_plugin_covariance/PoseWithCovariance
+      Color: 255; 25; 0
+      Covariance:
+        Orientation:
+          Alpha: 0.5
+          Color: 255; 255; 127
+          Color Style: Unique
+          Frame: Local
+          Offset: 1
+          Scale: 1
+          Value: false
+        Position:
+          Alpha: 0.699999988
+          Color: 0; 0; 0
+          Scale: 1
+          Value: true
+        Value: true
+      Enabled: false
+      Head Length: 0.300000012
+      Head Radius: 0.100000001
+      Name: Detection
+      Shaft Length: 1
+      Shaft Radius: 0.0500000007
+      Shape: Axes
+      Topic: /machine_8/object_detections/projected_to_world_network
+      Unreliable: false
+      Value: false
+    - Class: rviz/Image
+      Enabled: false
+      Image Topic: /machine_8/debug/neural_network/result
+      Max Value: 1
+      Median window: 5
+      Min Value: 0
+      Name: Camera debug
+      Normalize Range: true
+      Queue Size: 2
+      Transport Hint: raw
+      Unreliable: false
+      Value: false
+    - Alpha: 1
+      Arrow Length: 0.300000012
+      Axes Length: 0.300000012
+      Axes Radius: 0.00999999978
+      Class: rviz/PoseArray
+      Color: 0; 0; 0
+      Enabled: true
+      Head Length: 0.0700000003
+      Head Radius: 0.0299999993
+      Name: PoseArray
+      Shaft Length: 0.230000004
+      Shaft Radius: 0.00999999978
+      Shape: Arrow (Flat)
+      Topic: /machine_5/mpc_calculated/pose_traj
+      Unreliable: false
+      Value: true
+    - Alpha: 1
+      Arrow Length: 0.300000012
+      Axes Length: 0.300000012
+      Axes Radius: 0.00999999978
+      Class: rviz/PoseArray
+      Color: 0; 0; 0
+      Enabled: true
+      Head Length: 0.0700000003
+      Head Radius: 0.0299999993
+      Name: PoseArray
+      Shaft Length: 0.230000004
+      Shaft Radius: 0.00999999978
+      Shape: Arrow (Flat)
+      Topic: /machine_6/mpc_calculated/pose_traj
+      Unreliable: false
+      Value: true
+    - Alpha: 1
+      Arrow Length: 0.300000012
+      Axes Length: 0.300000012
+      Axes Radius: 0.00999999978
+      Class: rviz/PoseArray
+      Color: 0; 0; 0
+      Enabled: true
+      Head Length: 0.0700000003
+      Head Radius: 0.0299999993
+      Name: PoseArray
+      Shaft Length: 0.230000004
+      Shaft Radius: 0.00999999978
+      Shape: Arrow (Flat)
+      Topic: /machine_7/mpc_calculated/pose_traj
+      Unreliable: false
+      Value: true
+    - Alpha: 1
+      Arrow Length: 0.300000012
+      Axes Length: 0.300000012
+      Axes Radius: 0.00999999978
+      Class: rviz/PoseArray
+      Color: 0; 0; 0
+      Enabled: true
+      Head Length: 0.0700000003
+      Head Radius: 0.0299999993
+      Name: PoseArray
+      Shaft Length: 0.230000004
+      Shaft Radius: 0.00999999978
+      Shape: Arrow (Flat)
+      Topic: /machine_8/mpc_calculated/pose_traj
+      Unreliable: false
+      Value: true
+    - Class: rviz/Image
+      Enabled: false
+      Image Topic: /machine_5/debug/neural_network/result
+      Max Value: 1
+      Median window: 5
+      Min Value: 0
+      Name: Image
+      Normalize Range: true
+      Queue Size: 2
+      Transport Hint: raw
+      Unreliable: false
+      Value: false
+    - Class: rviz/Image
+      Enabled: false
+      Image Topic: /machine_4/debug/neural_network/result
+      Max Value: 1
+      Median window: 5
+      Min Value: 0
+      Name: Camera debug
+      Normalize Range: true
+      Queue Size: 2
+      Transport Hint: raw
+      Unreliable: false
+      Value: false
+    - Class: rviz/Image
+      Enabled: false
+      Image Topic: /machine_2/debug/neural_network/result
+      Max Value: 1
+      Median window: 5
+      Min Value: 0
+      Name: Camera debug
+      Normalize Range: true
+      Queue Size: 2
+      Transport Hint: raw
+      Unreliable: false
+      Value: false
+    - Class: rviz/Image
+      Enabled: false
+      Image Topic: /machine_2/debug/neural_network/result
+      Max Value: 1
+      Median window: 5
+      Min Value: 0
+      Name: Camera debug
+      Normalize Range: true
+      Queue Size: 2
+      Transport Hint: raw
+      Unreliable: false
+      Value: false
+    - Class: rviz/Image
+      Enabled: false
+      Image Topic: /machine_7/debug/neural_network/result
+      Max Value: 1
+      Median window: 5
+      Min Value: 0
+      Name: Camera debug
+      Normalize Range: true
+      Queue Size: 2
+      Transport Hint: raw
+      Unreliable: false
+      Value: false
+  Enabled: true
+  Global Options:
+    Background Color: 212; 212; 212
+    Default Light: true
+    Fixed Frame: world_ENU
+    Frame Rate: 30
+  Name: root
+  Tools:
+    - Class: rviz/Interact
+      Hide Inactive Objects: true
+    - Class: rviz/MoveCamera
+    - Class: rviz/Select
+    - Class: rviz/FocusCamera
+    - Class: rviz/Measure
+    - Class: rviz/SetInitialPose
+      Topic: /initialpose
+    - Class: rviz/SetGoal
+      Topic: /move_base_simple/goal
+    - Class: rviz/PublishPoint
+      Single click: true
+      Topic: /clicked_point
+  Value: true
+  Views:
+    Current:
+      Angle: -16.9900227
+      Class: rviz/TopDownOrtho
+      Enable Stereo Rendering:
+        Stereo Eye Separation: 0.0599999987
+        Stereo Focal Distance: 1
+        Swap Stereo Eyes: false
+        Value: false
+      Invert Z Axis: false
+      Name: Current View
+      Near Clip Distance: 0.00999999978
+      Scale: 28.1629791
+      Target Frame: <Fixed Frame>
+      Value: TopDownOrtho (rviz)
+      X: 0.931511164
+      Y: -7.94246578
+    Saved: ~
+Window Geometry:
+  Camera debug:
+    collapsed: false
+  Displays:
+    collapsed: true
+  Height: 1388
+  Hide Left Dock: true
+  Hide Right Dock: true
+  Image:
+    collapsed: false
+  QMainWindow State: 000000ff00000000fd00000004000000000000016a0000050afc0200000012fb0000001200530065006c0065006300740069006f006e00000001e10000009b0000006100fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed000001df00000185000000a3fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afc000000000000050a0000000000fffffffa000000010100000003fb0000001800430061006d0065007200610020006400650062007500670000000000ffffffff0000009500fffffffb0000001800430061006d0065007200610020006400650062007500670000000000ffffffff0000000000000000fb000000100044006900730070006c00610079007300000000000000016a0000016a00fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261fb0000001800430061006d006500720061002000640065006200750067020000000a0000007a000001430000012ffb0000001800430061006d006500720061002000640065006200750067020000037c000002a7000001420000011afb0000001800430061006d0065007200610020006400650062007500670200000376000001880000014e00000112fb0000001800430061006d006500720061002000640065006200750067020000000a000001b2000001480000010cfb0000001800430061006d0065007200610020006400650062007500670200000377000003e90000014500000106fb0000000a0049006d0061006700650200000376000000740000014400000108fb0000001800430061006d006500720061002000640065006200750067020000001b000003ef0000016a0000014afb0000001800430061006d006500720061002000640065006200750067020000001e0000015c0000016a0000012ffb0000001800430061006d006500720061002000640065006200750067020000000a000002d10000013f000000e7fb0000001800430061006d006500720061002000640065006200750067020000000a000003c90000013b0000011b000000010000010f000004fefc0200000003fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000000a005600690065007700730000000028000004fe000000ad00fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b2000000000000000000000002000009bf000000e1fc0100000003fb0000001800430061006d006500720061002000640065006200750067030000000d0000003c0000016a0000010dfb0000001800430061006d006500720061002000640065006200750067030000000a000003fd0000016a0000015bfb0000000a00560069006500770073030000004e00000080000002e10000019700000003000005000000003efc0100000002fb0000000800540069006d00650100000000000005000000030000fffffffb0000000800540069006d00650100000000000004500000000000000000000005000000050a00000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730000000000ffffffff0000000000000000
+  Selection:
+    collapsed: false
+  Time:
+    collapsed: false
+  Tool Properties:
+    collapsed: false
+  Views:
+    collapsed: true
+  Width: 1280
+  X: 0
+  Y: 24
