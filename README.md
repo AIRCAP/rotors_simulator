@@ -25,7 +25,8 @@ Step 8. Run a roscore in one terminal.
 
 Step 9. Execute the following command in the second terminal:
 
-     cd <Path to AIRCAP repository>/scripts/simulation/setup_mavocap_gazebo.sh <number_of_robots> <communication_success_rate_in_%> <experiment_name> 
+     cd <Path to AIRCAP repository>/scripts/simulation;
+     ./setup_mavocap_gazebo.sh <number_of_robots> <communication_success_rate_in_%> <experiment_name> 
 
 *** In gazebo we observe that the visualization in Gazebo is fast for 1 to 8 robots (<number_of_robots>). Above 8 robots the real time factor is generally near 0.1. The parameter defaults to 2 robots if not provided***
 *** (Optional) <communication_success_rate_in_%> defaults to 100 if not provided***
