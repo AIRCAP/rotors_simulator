@@ -6,11 +6,11 @@ Step 2. Clone the following in your catkin workspace (check whether it is alread
 
 	https://github.com/AIRCAP/rotors_simulator.git
 
-Step 3. export GAZEBO_PLUGIN_PATH=${GAZEBO_PLUGIN_PATH}: <Path to rotors_simulator>/Gazebo_Plugins
+Step 3. export GAZEBO_PLUGIN_PATH=${GAZEBO_PLUGIN_PATH}: &lt;Path to rotors_simulator&gt;/Gazebo_Plugins
 
-Step 4. cd <Path to rotors_simulator>/Gazebo_Plugins
-	mkdir build
-	cmake ..
+Step 4. cd  &lt;Path to rotors_simulator&gt;/Gazebo_Plugins;<br/>
+	mkdir build;<br/>
+	cmake ..;<br/>
 	make
 
 Step 5. Open file <Path to AIRCAP repository>/scripts/simulation/setup_mavocap_gazebo.sh or 
@@ -38,4 +38,5 @@ Step 10. Execute the following command in the second terminal:
 
 Step 11. Use rqt_image_view to see the neural network detector outputs.
 
-Step 12. run rviz for upto 8 UAVs  rosrun rviz rviz
+Step 12. run rviz for upto 8 UAVs : <br/> 
+rosrun rviz rviz
